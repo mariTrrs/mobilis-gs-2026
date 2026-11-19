@@ -1,4 +1,10 @@
 **/target/
+**/.gradle/
+**/build/
+**/.kotlin/
+.env
+**/.env
+!**/.env.example
 **/.idea/
 **/*.iml
 **/.classpath

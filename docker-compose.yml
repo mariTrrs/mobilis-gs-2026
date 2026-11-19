@@ -35,6 +35,24 @@ services:
       timeout: 5s
       retries: 10
 
+  postgres:
+    image: postgres:16-alpine
+    container_name: mobilis-postgres
+    environment:
+      POSTGRES_DB: mobilis
+      POSTGRES_USER: mobilis
+      POSTGRES_PASSWORD: mobilis
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_mobilis_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U mobilis -d mobilis"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
 volumes:
   mysql_inventario_data:
   mysql_comodato_data:
+  postgres_mobilis_data:
