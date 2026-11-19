@@ -1,0 +1,16 @@
+**/target/
+**/.idea/
+**/*.iml
+**/.classpath
+**/.project
+**/.settings/
+**/HELP.md
+.DS_Store
+Thumbs.db
+*.log
+refs/
+*.pdf
+.cursor/
+mobilis-app/
+SIS_GS_2026_02_V2(1).md
+3SI-Global_Solution*
