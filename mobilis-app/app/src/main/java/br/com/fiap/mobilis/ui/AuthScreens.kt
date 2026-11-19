@@ -19,7 +19,6 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import br.com.fiap.mobilis.R
-import br.com.fiap.mobilis.domain.EstadoInicial
 import br.com.fiap.mobilis.domain.Textos
 import br.com.fiap.mobilis.ui.componentes.Aceite
 import br.com.fiap.mobilis.ui.componentes.Aviso
@@ -53,15 +52,6 @@ fun TelaLogin(vm: MobilisViewModel, onCadastrar: () -> Unit, onRecuperar: () -> 
             BotaoSecundario("Criar conta", onClick = onCadastrar)
             BotaoSecundario("Esqueci a senha", onClick = onRecuperar)
             BotaoSecundario("Tenho um convite de operador", onClick = onConvite)
-            Aviso(
-                "Contas de demonstração. Senha ${EstadoInicial.SENHA_DEMO}.\n" +
-                    "ana.costa@mobilis.app — solicitante\n" +
-                    "gestor@mobilis.app — gestor\n" +
-                    "operador@mobilis.app — operador\n" +
-                    "admin@mobilis.app — administração\n" +
-                    "igreja@mobilis.app — instituição em análise\n" +
-                    "hospital@mobilis.app — outro gestor"
-            )
         }
     }
 }
