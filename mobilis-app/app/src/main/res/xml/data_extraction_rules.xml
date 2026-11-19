@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <include domain="file" path="mobilis-estado.json" />
+        <exclude domain="sharedpref" path="mobilis_sessao.xml" />
+    </cloud-backup>
+    <device-transfer>
+        <include domain="file" path="mobilis-estado.json" />
+        <exclude domain="sharedpref" path="mobilis_sessao.xml" />
+    </device-transfer>
+</data-extraction-rules>

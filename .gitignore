@@ -17,6 +17,9 @@ Thumbs.db
 refs/
 *.pdf
 .cursor/
-mobilis-app/
+**/local.properties
+**/*.apk
+**/*.aab
+**/captures/
 SIS_GS_2026_02_V2(1).md
 3SI-Global_Solution*

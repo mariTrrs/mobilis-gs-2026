@@ -129,6 +129,24 @@ cd ../ms-comodato
 ./mvnw verify
 ```
 
+## 6. Aplicativo Android
+
+O app fica em `mobilis-app` e roda sem os microsserviços: os dados ficam no aparelho. O roteiro de apresentação está em `mobilis-app/ROTEIRO-PITCH.md`.
+
+Pré-requisitos: Android Studio com SDK 36 e um emulador ou aparelho com Android 7.0 (API 24) ou superior.
+
+1. Abra a pasta `mobilis-app` no Android Studio e aguarde o sync do Gradle. O Android Studio cria o `local.properties` com o caminho do SDK. Esse arquivo não vai para o Git.
+2. Execute a configuração `app`.
+
+Senha das contas de demonstração: `Mobilis@2026`. Os e-mails estão no README do app.
+
+No Windows, a partir de `mobilis-app`:
+
+```bash
+gradlew.bat :app:assembleDebug
+gradlew.bat :app:testDebugUnitTest
+```
+
 ## Estrutura do monorepo
 
 ```text
@@ -138,6 +156,8 @@ GS2-2026/
   api-gateway/
   ms-inventario/
   ms-comodato/
+  mobilis-app/
+  mobilis-app/ROTEIRO-PITCH.md
   README.md
   entrega.txt
 ```
